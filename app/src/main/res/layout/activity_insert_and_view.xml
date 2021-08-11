@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InsertAndViewActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/design_default_color_primary"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/design_default_color_primary"
+                android:src="@drawable/ic_baseline_check_24"
+                />
+
+            <EditText
+                android:id="@+id/editJudul"
+                style="@style/styleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="6dp"
+                android:background="@color/white"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="18sp"
+                android:hint="Title"
+                android:fontFamily="sans-serif-medium"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editNote"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="662dp"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/note_hint"
+            android:textColor="@color/black"
+            android:textColorHint="#CDC3C3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textToby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Created By Tobi | 02113904121-6"
+            android:textColor="@color/design_default_color_primary"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

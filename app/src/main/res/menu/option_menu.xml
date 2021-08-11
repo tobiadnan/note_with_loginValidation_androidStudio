@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optionAddNote"
+        android:title="Add Note"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/optionSetting"
+        android:title="Setting"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/optionAbout"
+        android:title="About"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/optionExit"
+        android:title="Exit"
+        app:showAsAction="never"
+
+        />
+
+</menu>
